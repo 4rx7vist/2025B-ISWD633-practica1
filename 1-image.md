@@ -1,4 +1,4 @@
-<img width="787" height="23" alt="image" src="https://github.com/user-attachments/assets/d6b21e13-095a-419c-91ca-9d965bcc0389" /># Imagen
+
 ### Descargar imagen
 Descarga la última versión de la imagen disponible en el registro de Docker.
 
