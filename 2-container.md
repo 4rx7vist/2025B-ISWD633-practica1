@@ -139,9 +139,22 @@ se detuvo y se elimino al instante
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
+
+> Si se elimino del registro
+
+<img width="1215" height="56" alt="image" src="https://github.com/user-attachments/assets/7ef20944-99df-4610-9a06-f67eb1797bb2" />
+
 # COMPLETAR
 
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
+
+>
+```
+ docker inspect srv-web
+[]
+Error: No such object: srv-web
+```
+
 # COMPLETAR
