@@ -6,10 +6,25 @@ docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
+
+Se utiliza para listar todo el contenido de un directorio, que situa a todas sus carpetas y archivos.
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+$ ls -l: use a long listing format
+Sirve para listar de manera detallada todo lo contenido en el directorio y en un formato definido.
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
+
+Se ejecuta el comeando 
+```
+$ ls -l 
+```
+y en captura de pantalla aparece lo siguiente.
+
 # COMPLETAR
 # COLOCAR UNA CAPTURA DE PANTALLA
+
+<img width="629" height="440" alt="image" src="https://github.com/user-attachments/assets/343d1519-e4d3-4cbb-a9a1-7bfff112db29" />
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
@@ -20,6 +35,7 @@ Para saber qué comando utilizar para abrir una terminal dentro de un contenedor
 ```
 docker exec -i <nombre contenedor> <programa o comando>
 ```
+
 -i: mantiene abierta la entrada estándar (stdin) del contenedor. Esto significa que puedes enviar datos al proceso que se está ejecutando en el contenedor a través de la terminal local. *Sin embargo, esto no asigna un terminal al contenedor, por lo que no podrás ver la salida del proceso de forma interactiva.*
 
 ### Ejecutar una de las siguientes instrucciones
@@ -30,6 +46,8 @@ docker exec -i <nombre contenedor> /bin/bash
 ```
 docker exec -i <nombre contenedor> bash 
 ```
+Se visualiza una intermitencia de un input.
+
 **Considerar**
 - /bin/bash: Al especificar la ruta completa del shell, Docker buscará el ejecutable /bin/bash en el sistema de archivos del contenedor y lo ejecutará. Esto es útil cuando quieres asegurarte de que se está utilizando un shell específico que está ubicado en una ubicación conocida en el sistema de archivos del contenedor. 
 - bash: Al especificar solo el nombre del shell, Docker buscará el comando bash en las rutas del sistema (por lo general, en las rutas definidas en la variable de entorno PATH) del contenedor y lo ejecutará. Esto asume que bash está disponible en alguna de las rutas del sistema definidas en el contenedor.
@@ -44,6 +62,9 @@ Ejecutar
 whoami
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA
+<img width="560" height="170" alt="image" src="https://github.com/user-attachments/assets/8b1381fe-2b01-443d-8f19-6b9823044972" />
+
+La salida no se ha direccionado al host 
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -67,6 +88,8 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
 
+<img width="989" height="825" alt="image" src="https://github.com/user-attachments/assets/bf128077-4c63-425e-a54e-7e4f645bec96" />
+
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
 
@@ -76,4 +99,6 @@ docker exec -it <nombre contenedor> <programa o comando>
 docker logs -n <cantidad de líneas> <nombre o id del contenedor> 
 ```
 -t: para incluir la fecha y la hora
+
+<img width="1696" height="421" alt="image" src="https://github.com/user-attachments/assets/ca97521b-c1b4-4dd6-9ccb-0e8f25073d01" />
 
