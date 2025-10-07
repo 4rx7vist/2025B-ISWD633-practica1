@@ -5,4 +5,4 @@ Docker es un plataforma de contenedorización de código, aplicativos que han si
 
 Anteriormente no conocia a profundidad la utilidad de algunos comandos de docker como -i para la comunicacion de la maquina host con el contenedor, igual su utilidad en la comunicacion bireccional en el testeo de aplicaciones de prueba.
 
-Aunque docker es una herramienta para la portabilidad y usabilidad de aplicaciones en entornos controlados, sigue ayudando al desarrollo y utilizacion de recursos respecto a otros aplicativos como Maquinas Virtuales.
+Aunque docker es una herramienta para la portabilidad y usabilidad de aplicaciones en entornos controlados, sigue ayudando al desarrollo y utilizacion de recursos respecto a otros aplicativos como Maquinas Virtuales con el consumo de recursos del sistema.
